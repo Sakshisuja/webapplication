@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Firebase Authentication</title>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-databse.js">
+</script>
+<link rel="stylesheet" href="cssfile.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="form.js"></script>
+<script src="server.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+<div class="navbar">
+    <div class="logo">
+        <img src="i1.jpg" width="125px">
+        
+        
+    </div>
+    <nav>
+        <ul id="MenuItems">
+        <li><a href="book.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">ContactUs</a></li>
+            <li><a href="index.html">Account</a></li>
+        </ul>
+
+    </nav>
+    <a href="cart.html">
+    <img src="cart.jpg" width="30px" height="30px">
+    <img src="menu.png" class="menu" onclick="MenuToggle()"></a>
+    </div>
+<div id="login-box">
+  <div class="left">
+    <h1 id='status'><b>Credentials</b></h1>
+    <input type="text" id="email" name="email" placeholder="E-mail" />
+    <input type="password" id="password" name="password" placeholder="Password" />
+    
+    <button onclick="signIn()" id="signIn" class="social-signin twitter" >SignIn</button>
+
+  </div>
+  
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+    <button onclick="signUp()" id="signUp" class="social-signin facebook">SignUp</button>
+    
+    <button onclick="signOut()" id="signOut" class="social-signin google">SignOut</button>
+  </div>
+  <div class="or">OR</div>
+</div>
+</body>
+<!--        footer-->
+<div class="footer">
+  <div class="container">
+      <div class="row">
+      <div class="footer-col-1">
+          <h3>Visit Our Website</h3>
+          <p>Explore this fabulous book store freely</p>
+          <div class="app-logo">
+          <img src="logo1.png">
+              <img src="logo2.png">
+          </div>
+          </div>
+          <div class="footer-col-2">
+          <img src="i1.jpg" width="125px">
+              <p>This website is for Book lovers.Now don't want to go anywhere you can order and read them in your home</p>
+          
+          </div>
+          <div class="footer-col-3">
+          <h3>You can checkout us on:</h3>
+              <ul>
+              <li>YouTube</li>
+              <li>Instagram</li>
+              <li>facebook</li>
+              <li>Twitter</li>
+                  </ul>
+          </div>
+      </div>
+      <hr>
+      <p class="copy">Copyright 2021-2022 Sakshi-Nirmala Project</p>
+      
+      </div>
+  </div>
+
+</html>
